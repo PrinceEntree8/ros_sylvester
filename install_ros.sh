@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Sorgente https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
 # Installazione repository di ROS
 sudo apt install software-properties-common
@@ -8,4 +10,4 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 # Installazione di ROS 2 (jazzy)
 sudo apt update
 sudo apt upgrade -y
-sudo apt install ros-jazzy-ros-desktop ros-dev-tools -y
+sudo apt install ros-jazzy-desktop ros-dev-tools -y
