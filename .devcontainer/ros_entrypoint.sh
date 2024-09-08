@@ -10,4 +10,6 @@ source ~/robot_ws/install/setup.bash --
 echo "source '/opt/ros/$ROS_DISTRO/setup.bash'" >> ~/.bashrc
 echo "source '~/robot_ws/install/setup.bash'" >> ~/.bashrc
 
+chown -R ro:ros /home/ros/robot_ws
+
 exec "$@"

@@ -1,6 +1,6 @@
 {
     "name": "ROS 2 Workspace jazzy (Windows)",
-    "remoteUser": "root",
+    "remoteUser": "ros",
     "build": {
         "dockerfile": "../Dockerfile",
     },
@@ -28,8 +28,8 @@
             }
         }
     },
-    "workspaceFolder": "/root/robot_ws",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/root/robot_ws,type=bind",
+    "workspaceFolder": "/home/ros/robot_ws",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/ros/robot_ws,type=bind",
     "mounts": [
         "source=/run/desktop/mnt/host/wslg/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached"
@@ -37,6 +37,7 @@
     "containerEnv": {
         "DISPLAY": "unix:0"
     },
+    "containerUser": "ros",
     "runArgs": [
         "--net=host",
         "--pid=host",
