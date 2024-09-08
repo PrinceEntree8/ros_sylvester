@@ -1,0 +1,4 @@
+uint8 speed_percentage
+---
+float32 frequency
+bool success
